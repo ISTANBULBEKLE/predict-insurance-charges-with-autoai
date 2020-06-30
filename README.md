@@ -48,27 +48,6 @@ When you have completed this code pattern, you understand how to:
 + [artificial-intelligence](https://developer.ibm.com/technologies/artificial-intelligence/) - Build and train models, and create apps, with a trusted AI-infused platform.
 + [Python](https://www.python.org/) - Python is an interpreted, high-level, general-purpose programming language.
 
-## Watch the Video
-
-#### IBM Watson AutoAI Part 1/3: Data exploration and visualization
-
-<a href="https://www.youtube.com/watch?v=9JuiqVXvQ74">
-<img src="https://user-images.githubusercontent.com/10428517/82686741-2c4c6980-9c0b-11ea-896d-b8972aac981a.png" width="725" height="388" /> 
-</a>
-
-#### IBM Watson AutoAI Part 2/3: Running AutoAI
-
-<a href="https://www.youtube.com/watch?v=ilw6O5HwtY0">
-
-<img src="https://user-images.githubusercontent.com/10428517/82686738-2bb3d300-9c0b-11ea-9987-67f40951aa81.png" width="725" height="388" />
-</a>
-
-#### IBM Watson AutoAI Part 3/3: Connecting model API to a web-app
-
-<a href="https://www.youtube.com/watch?v=sOtezE-YNPU">
-
-<img src="https://user-images.githubusercontent.com/10428517/82686732-2787b580-9c0b-11ea-99cb-2986cacead71.png" width="725" height="388" />
-</a>
 
 ## Prerequisites
 
