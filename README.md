@@ -51,9 +51,8 @@ When you have completed this code pattern, you understand how to:
 
 ## Prerequisites
 
-This Cloud pattern assumes you have an **IBM Cloud** account. Go to the 
-link below to sign up for a no-charge trial account - no credit card required. 
-  - [IBM Cloud account](https://tinyurl.com/y4mzxow5)
+Create an **IBM Cloud** account using the below link 
+  - [IBM Cloud account](https://ibm.biz/auto-ai-predict)
   - [Python 3.8.2](https://www.python.org/downloads/release/python-382/)
 
 # Steps
@@ -76,14 +75,14 @@ could use any data set you want - we just happened to choose this one.
 ## Step 1. Clone the repo
 Clone this repo onto your computer in the destination of your choice:
 ```
-git clone https://github.com/IBM/predict-insurance-charges-with-ai
+git clone https://github.com/IBMDeveloperUK/predict-insurance-charges-with-autoai
 ```
 This gives you access to the notebooks in the `notebooks` directory. To explore the data before creating a model, 
-you can look at the [Claim Amount Exploratory](https://github.com/IBM/predict-insurance-charges-with-ai/blob/master/notebooks/Claim%20Amount%20Exploratory.ipynb) notebook, and create a [IBM Cloud Object Storage](https://cloud.ibm.com/catalog/services/cloud-object-storage) service, and paste your credentials in the notebook to run it. This step is purely optional.
+you can look at the [Claim Amount Exploratory](https://github.com/IBMDeveloperUK/predict-insurance-charges-with-autoai/blob/master/notebooks/Claim%20Amount%20Exploratory.ipynb) notebook, and create a [IBM Cloud Object Storage](https://cloud.ibm.com/catalog/services/cloud-object-storage) service, and paste your credentials in the notebook to run it. This step is purely optional.
 
 ## Step 2. Explore the data (optional)
 
-#### If you want to run the notebook that is explored below, go to [`notebooks/Claim Amount Exploratory.ipynb`](https://github.com/IBM/predict-insurance-charges-with-ai/blob/master/notebooks/Claim%20Amount%20Exploratory.ipynb).
+#### If you want to run the notebook that is explored below, go to [`notebooks/Claim Amount Exploratory.ipynb`](https://github.com/IBMDeveloperUK/predict-insurance-charges-with-autoai).
 * Within Watson Studio, you explore the data before you create any 
 machine learning models. You want to understand the data, and find any trends between 
 what you are trying to predict (insurance premiums <b>charges</b>) and the data's features.
