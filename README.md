@@ -82,7 +82,7 @@ you can look at the [Claim Amount Exploratory](https://github.com/IBMDeveloperUK
 
 ## Step 2. Explore the data (optional)
 
-#### If you want to run the notebook that is explored below, go to [`notebooks/Claim Amount Exploratory.ipynb`](https://github.com/IBMDeveloperUK/predict-insurance-charges-with-autoai).
+#### If you want to run the notebook that is explored below, go to [`notebooks/Claim Amount Exploratory.ipynb`](https://github.com/IBMDeveloperUK/predict-insurance-charges-with-autoai/blob/master/notebooks/Claim%20Amount%20Exploratory.ipynb).
 * Within Watson Studio, you explore the data before you create any 
 machine learning models. You want to understand the data, and find any trends between 
 what you are trying to predict (insurance premiums <b>charges</b>) and the data's features.
@@ -261,7 +261,7 @@ non-smoker to get a premium of 3,900. This is relatively close to the model's pr
 we know the model is working properly.
 
 ## Step 6. Create a notebook from your model (optional)
-#### If you want to run the notebook that you explore below, go to [`notebooks/Insurance Premium Predictor - P8 notebook.ipynb`](https://github.ibm.com/Horea-Porutiu/AoT-AutoAI/blob/master/notebooks/Insurance%20Premium%20Predictor%20-%20P8%20notebook.ipynb).
+
 With AutoAI's latest features, the code that is run to create these models is no more a black box. One or more of these models can be saved as a Jupyter notebook and the Python code can be run and enhanced from within. 
 
 ### 6.1 Create notebook 
@@ -448,7 +448,9 @@ button to see your predicted charges based on your data.
 
 * As is expected, if you are a smoker, this drastically increase the insurance charges. 
 
+
 ## Bonus Section - Visualize the data and share your findings via Cognos Dashboard Embedded.
+
 * You can add a Dashboard which is a lean version of Cognos Dashboard available on IBM cloud from "Add to Project" option in your Watson Studio project.
 
 * You can start finding patterns in your data by easily visualizing various data points. This can get your exploration started within few minutes and with no coding involved
