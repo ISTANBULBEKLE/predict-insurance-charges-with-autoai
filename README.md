@@ -94,18 +94,18 @@ and `region`.
 
 ![scatter](https://media.github.ibm.com/user/79254/files/ed325a80-8a48-11ea-8fcf-d1e9877458ef =250x)
 
-* To check if there is a strong relationship between `bmi` and `charges` you 
+* To check if there is a strong relationship between `bmi` and `expenses` you 
 create a scatter plot using the seaborn and matplotlib libraries. You 
-see that there is no strong correlation between `bmi` and `charges`,
+see that there is no strong correlation between `bmi` and `expenses`,
 as shown below.
 
 ![scatter](https://media.github.ibm.com/user/79254/files/2965bb00-8a49-11ea-81f9-a528fc1e2606)
 
-* To check if there is a strong relationship between `sex` and `charges` you create a box plot. You see that the average claims for males and females are similar, whereas males have a bigger proportion of the higher claims.
+* To check if there is a strong relationship between `sex` and `expenses` you create a box plot. You see that the average claims for males and females are similar, whereas males have a bigger proportion of the higher claims.
 
 ![scatter](https://media.github.ibm.com/user/79254/files/32ef2300-8a49-11ea-93aa-990f85eccf9d)
 
-* To check if there is a strong relationship between being a `smoker` and `charges` you create a box plot. You see that if you are a smoker, your claims are much higher on average.
+* To check if there is a strong relationship between being a `smoker` and `expenses` you create a box plot. You see that if you are a smoker, your claims are much higher on average.
 
 ![scatter](https://media.github.ibm.com/user/79254/files/4221a100-8a48-11ea-8104-64f50d8ae92f)
 
@@ -114,7 +114,7 @@ There are around 300 smokers, and around 1000 non-smokers.
 
 ![scatter](https://media.github.ibm.com/user/79254/files/477eeb80-8a48-11ea-83a0-9a073bf4f176)
 
-* To check if there is a strong relationship between being a `age` and `charges` you create a scatter plot. You see that claim amounts increase with age, and tend to form groups around 12,000, 30,000, and 40,000.
+* To check if there is a strong relationship between being a `age` and `expenses` you create a scatter plot. You see that claim amounts increase with age, and tend to form groups around 12,000, 30,000, and 40,000.
 
 ![scatter](https://media.github.ibm.com/user/79254/files/5bc2e880-8a48-11ea-8dad-8effab71a8ac)
 
@@ -189,7 +189,7 @@ insurance file under `Data Assets`.
 
 
 * Next, you see that AutoAI processes your data, and you see a `What do you want to predict` section. 
-Select the `charges` as the `Prediction column`. 
+Select the `expenses` as the `Prediction column`. 
 
 ![experimentSettings](https://media.github.ibm.com/user/79254/files/4e63ac00-8fbc-11ea-842d-7107de2fed13)
 
@@ -204,7 +204,7 @@ such as Binary Classification, AutoAI defaults to Accuracy. Either way, you can 
 * Lastly, you can see the `Runtime` tab from the `Experiment settings` this shows you other experiment details 
 you may want to change depending on your use case. 
 
-* Once you are happy with your settings, ensure you are predicting for the `charges` column, and click on the run `Run Experiment` button on the bottom-right corner of the 
+* Once you are happy with your settings, ensure you are predicting for the `expenses` column, and click on the run `Run Experiment` button on the bottom-right corner of the 
 screen.
 
 ![compl](https://media.github.ibm.com/user/79254/files/004fbf80-8630-11ea-9c69-e97b12c39bbe)
