@@ -92,31 +92,30 @@ what you are trying to predict (insurance premiums <b>charges</b>) and the data'
 You see the features to be `age`, `sex`, `bmi`, `children`, `smoker`,
 and `region`.
 
-![scatter](https://media.github.ibm.com/user/79254/files/ed325a80-8a48-11ea-8fcf-d1e9877458ef =250x)
 
 * To check if there is a strong relationship between `bmi` and `expenses` you 
 create a scatter plot using the seaborn and matplotlib libraries. You 
 see that there is no strong correlation between `bmi` and `expenses`,
 as shown below.
 
-![scatter](https://media.github.ibm.com/user/79254/files/2965bb00-8a49-11ea-81f9-a528fc1e2606)
+![scatter](https://github.com/IBMDeveloperUK/predict-insurance-charges-with-autoai/blob/master/Images/bmi.png)
 
 * To check if there is a strong relationship between `sex` and `expenses` you create a box plot. You see that the average claims for males and females are similar, whereas males have a bigger proportion of the higher claims.
 
-![scatter](https://media.github.ibm.com/user/79254/files/32ef2300-8a49-11ea-93aa-990f85eccf9d)
+![scatter](https://github.com/IBMDeveloperUK/predict-insurance-charges-with-autoai/blob/master/Images/gender.png)
 
 * To check if there is a strong relationship between being a `smoker` and `expenses` you create a box plot. You see that if you are a smoker, your claims are much higher on average.
 
-![scatter](https://media.github.ibm.com/user/79254/files/4221a100-8a48-11ea-8104-64f50d8ae92f)
+![scatter](https://github.com/IBMDeveloperUK/predict-insurance-charges-with-autoai/blob/master/Images/smoker.png)
 
 * Let's see if the `smoker` group is well represented. As you see, below, it is. 
 There are around 300 smokers, and around 1000 non-smokers.
 
-![scatter](https://media.github.ibm.com/user/79254/files/477eeb80-8a48-11ea-83a0-9a073bf4f176)
+![scatter](https://github.com/IBMDeveloperUK/predict-insurance-charges-with-autoai/blob/master/Images/represent.png)
 
 * To check if there is a strong relationship between being a `age` and `expenses` you create a scatter plot. You see that claim amounts increase with age, and tend to form groups around 12,000, 30,000, and 40,000.
 
-![scatter](https://media.github.ibm.com/user/79254/files/5bc2e880-8a48-11ea-8dad-8effab71a8ac)
+![scatter](https://github.com/IBMDeveloperUK/predict-insurance-charges-with-autoai/blob/master/Images/age.png)
 
 If you want to see all of the code, and run the notebook yourself, check the data folder above.
 
