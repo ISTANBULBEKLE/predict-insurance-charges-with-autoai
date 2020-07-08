@@ -23,7 +23,7 @@ When you have completed this code pattern, you understand how to:
 * Ingest the data and initiate the AutoAI process.
 * Build different models using AutoAI and evaluate the performance.
 * Choose the best model and complete the deployment.
-* Generate predictions using the deployed model by making REST calls.
+* Generate predictions using the deployed model 
 * Compare the process of using AutoAI and building the model manually.
 * Visualize the deployed model using a front-end application.
 
@@ -190,7 +190,7 @@ insurance file under `Data Assets`.
 * Next, you see that AutoAI processes your data, and you see a `What do you want to predict` section. 
 Select the `expenses` as the `Prediction column`. 
 
-![experimentSettings](https://media.github.ibm.com/user/79254/files/4e63ac00-8fbc-11ea-842d-7107de2fed13)
+![experimentSettings](https://github.com/IBMDeveloperUK/predict-insurance-charges-with-autoai/blob/master/Images/predict.png)
 
 * Next, let's explore the AutoAI settings to see what you can customize when running your experiment. Click on `Experiment settings.` First, you see the `data source` tab, which lets you omit 
 certain columns from your experiment. You choose to leave all columns. You can also select the 
