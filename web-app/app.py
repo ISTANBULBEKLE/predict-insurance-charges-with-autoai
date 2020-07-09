@@ -12,16 +12,17 @@ import json
 
 app = Flask(__name__, instance_relative_config=False)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
-app.secret_key = 'development key' #you will need a secret key
+app.secret_key = 'development key'  # you will need a secret key
 
 if __name__ == "__main__":
-  app.run(debug=True, host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0')
+
 
 @app.route('/', methods=('GET', 'POST'))
-
 def startApp():
     form = PredictForm()
     return render_template('index.html', form=form)
+
 
 @app.route('/predict', methods=('GET', 'POST'))
 def predict():
@@ -30,36 +31,35 @@ def predict():
 
         # NOTE: generate iam_token and retrieve ml_instance_id based on provided documentation
         header = {'Content-Type': 'application/json', 'Authorization': 'Bearer '
-                 + " TODO: ADD YOUR IAM ACCESS TOKEN FROM IBM CLOUD HERE",
-                  'ML-Instance-ID': " TODO: ADD YOUR ML INSTANCE ID HERE "}
+                  + " TODO: ADD YOUR IAM ACCESS TOKEN FROM IBM CLOUD HERE",
+                  'ML-Instance-ID': " 834f60d6-9a39-420e-a7ae-7c37325ec40a "}
 
-        if(form.bmi.data == None): 
-          python_object = []
+        if(form.bmi.data == None):
+            python_object = []
         else:
-          python_object = [form.age.data, form.sex.data, float(form.bmi.data),
-            form.children.data, form.smoker.data, form.region.data]
-        #Transform python objects to  Json
+            python_object = [form.age.data, form.sex.data, float(form.bmi.data),
+                             form.children.data, form.smoker.data, form.region.data]
+        # Transform python objects to  Json
 
         userInput = []
         userInput.append(python_object)
 
         # NOTE: manually define and pass the array(s) of values to be scored in the next line
         payload_scoring = {"input_data": [{"fields": ["age", "sex", "bmi",
-          "children", "smoker", "region"], "values": userInput }]}
+                                                      "children", "smoker", "region"], "values": userInput}]}
 
-        response_scoring = requests.post("https://us-south.ml.cloud.ibm.com/v4/deployments/ADD-DEPLOYMENT-ID-HERE/predictions", json=payload_scoring, headers=header)
+        response_scoring = requests.post(
+            "https://eu-gb.ml.cloud.ibm.com/v4/deployments/597f5349-fc46-4edc-88ad-e23eb7c45a1e/prediction", json=payload_scoring, headers=header)
 
         output = json.loads(response_scoring.text)
         print(output)
         for key in output:
-          ab = output[key]
-        
+            ab = output[key]
 
         for key in ab[0]:
-          bc = ab[0][key]
-        
-        roundedCharge = round(bc[0][0],2)
+            bc = ab[0][key]
 
-  
-        form.abc = roundedCharge # this returns the response back to the front page
+        roundedCharge = round(bc[0][0], 2)
+
+        form.abc = roundedCharge  # this returns the response back to the front page
         return render_template('index.html', form=form)
